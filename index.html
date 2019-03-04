@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+		<title>Rock, Paper, Scissors</title>
+	</head>
+
+	<body>
+		<div class="container border border-primary justify-content-center text-center mt-5">
+			<div class="row bg-primary text-white m-3">
+				<div class="col pt-1">
+					<h4>Rock, Paper, Scissors</h4>
+				</div>
+			</div>
+			<div class="row m-3 border border-primary">
+				<div class="col-12 pt-1">
+					<h2>SCORE</h2>
+				</div>
+				<div class="col-6 mt-1 mb-1">
+					<h1>Player</h1>
+				</div>
+				<div class="col-6 mt-1 mb-1">
+					<h1>Computer</h1>
+				</div>
+				<div class="col border mx-5 mt-2 mb-4 pt-1">
+					<h3 id="player">0</h3>
+				</div>
+				<div class="col border mx-5 mt-2 mb-4 pt-1">
+					<h3 id="computer">0</h3>
+				</div>
+			</div>
+			<div class="row m-3 border border-primary">
+				<div class="col-12 pt-1">
+					<h5>CURRENT ROUND</h5>
+				</div>
+				<div class="col-12">
+					<h5 id="round">N/A</h5>
+				</div>
+			</div>
+			<div class="row m-3 pb-1">
+				<div class="col-4">
+					<span>
+						<button name="Rock" type="button" class="btn btn-primary buttons" onclick="startRound(this.name)">Rock</button>
+					</span>
+				</div>
+				<div class="col-4">
+					<span>
+						<button name="Paper" type="button" class="btn btn-primary buttons" onclick="startRound(this.name)">Paper</button>
+					</span>
+				</div>
+				<div class="col-4">
+					<span>
+						<button name="Scissors" type="button" class="btn btn-primary buttons" onclick="startRound(this.name)">Scissors</button>
+					</span>
+				</div>
+			</div>
+		</div>
+
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		<script src="script.js"></script>
+	</body>
+</html>

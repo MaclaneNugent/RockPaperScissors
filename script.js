@@ -53,10 +53,14 @@ function checkForWinner(playerScore, computerScore) {
 	if (playerScore == 5) {
 		document.getElementById("round").innerHTML = 'YOU WIN';
 		disableButtons();
+		document.getElementById("modal-body").innerHTML = 'YOU WIN';
+		$('#exampleModal').modal('show');
 	}
 	else if (computerScore == 5) {
 		document.getElementById("round").innerHTML = 'YOU LOSE';
 		disableButtons();
+		document.getElementById("modal-body").innerHTML = 'YOU WIN';
+		$('#exampleModal').modal('show');
 	}
 	else {
 		console.log('keep going');
@@ -69,6 +73,21 @@ function disableButtons() {
 	    elems[i].disabled = true;
 	}
 }
+
+function enableButtons() {
+	var elems = document.getElementsByClassName("buttons");
+	for(var i = 0; i < elems.length; i++) {
+	    elems[i].disabled = false;
+	}
+}
+
+function resetGame() {
+	document.getElementById("player").innerHTML = 0;
+	document.getElementById("computer").innerHTML = 0;
+	document.getElementById("round").innerHTML = 'N/A';
+	enableButtons();
+}
+
 
 
 
